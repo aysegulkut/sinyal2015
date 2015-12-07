@@ -79,7 +79,7 @@ Birlik Sus, 1
 Fa, 1
 
 19.Ölçü:
-Sol, 1/2
+Sol, 3/4
 Kalýn Do, 1/4
 
 20.Ölçü:
@@ -112,7 +112,7 @@ Birlik Sus, 1
 Fa, 1
 
 27.Ölçü:
-Sol, 1/2
+Sol, 3/4
 Kalýn Do, 1/4
 
 28.Ölçü:
