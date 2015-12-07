@@ -1,136 +1,145 @@
 1.Ölçü:
-Fa, 3/2
-Fa, 1/2
-Fa, 1
-Fa, 1
+Birlik Sus, 1
 
 2.Ölçü:
-Mi, 1
-Fa, 2
-Fa, 1
+Fa, 3/2
+Fa, 1/8
+Fa, 1/4
+Fa, 1/4
 
 3.Ölçü:
-Mi, 1
-Fa, 2
-Sol, 1
+Mi, 1/4
+Fa, 1/2
+Fa, 1/4
 
 4.Ölçü:
-La, 2
-Sol, 2
+Mi, 1/4
+Fa, 1/2
+Sol, 1/4
 
 5.Ölçü:
-Fa, 3/2
-Fa, 1/2
-Fa, 1
-Fa, 1
+La, 1/2
+Sol, 1/2
 
 6.Ölçü:
-Mi, 1
-Fa, 2
-Fa, 1
+Fa, 3/2
+Fa, 1/8
+Fa, 1/4
+Fa, 1/4
 
 7.Ölçü:
-Kalýn Do, 4
+Mi, 1/4
+Fa, 1/2
+Fa, 1/4
 
 8.Ölçü:
-Fa, 3/2
-Fa, 1/2
-Fa, 1
-Fa, 1
+Kalýn Do, 1
 
 9.Ölçü:
-Mi, 1
-Fa, 2
-Fa, 1
+Birlik Sus, 1
 
 10.Ölçü:
-Mi, 1
-Fa, 2
-Sol, 1
+Fa, 3/2
+Fa, 1/8
+Fa, 1/4
+Fa, 1/4
 
 11.Ölçü:
-La, 2
-Sol, 2
+Mi, 1/4
+Fa, 1/2
+Fa, 1/4
 
 12.Ölçü:
-Fa, 3/2
+Mi, 1/4
 Fa, 1/2
-Fa, 1
-Fa, 1
+Sol, 1/4
 
 13.Ölçü:
-Mi, 1
-Fa, 2
-Fa, 1
+La, 1/2
+Sol, 1/2
 
 14.Ölçü:
-Kalýn Do, 4
+Fa, 3/2
+Fa, 1/8
+Fa, 1/4
+Fa, 1/4
 
 15.Ölçü:
-Fa, 4
+Mi, 1/4
+Fa, 1/2
+Fa, 1/4
 
 16.Ölçü:
-Sol, 3
 Kalýn Do, 1
 
 17.Ölçü:
-Ýnce Do, 2
-Sib, 1
-La, 1
+Birlik Sus, 1
 
 18.Ölçü:
-Sol, 2
-La, 1
-Sib, 1
+Fa, 1
 
 19.Ölçü:
-La, 2
-Sol, 1
-Fa, 1
+Sol, 1/2
+Kalýn Do, 1/4
 
 20.Ölçü:
-Mi, 1
-Fa, 2
-Mi, 1
+Ýnce Do, 1/2
+Si, 1/4
+La, 1/4
 
 21.Ölçü:
-Re, 4
+Sol, 1/2
+La, 1/4
+Si, 1/4
 
 22.Ölçü:
-Fa, 4
+La, 1/2
+Sol, 1/4
+Fa, 1/4
 
 23.Ölçü:
-Sol, 3
-Kalýn Do, 1
+Mi, 1/4
+Fa, 1/2
+Mi, 1/4
 
 24.Ölçü:
-Ýnce Do, 2
-Sib, 1
-La, 1
+Re, 1
 
 25.Ölçü:
-Sol, 2
-La, 1
-Sib, 1
+Birlik Sus, 1
 
 26.Ölçü:
-La, 2
-Sol, 1
-Fa, 1
+Sol, 1/2
+Kalýn Do, 1/4
 
 27.Ölçü:
-Mi, 1
-Fa, 2
-Mi, 1
+Ýnce Do, 1/2
+Si, 1/4
+La, 1/4
 
 28.Ölçü:
-Mi, 1
-Fa, 2
-Sol, 1
+Sol, 1/2
+La, 1/4
+Si, 1/4
 
 29.Ölçü:
-La, 2
-Sol, 2
+La, 1/2
+Sol, 1/4
+Fa, 1/4
 
 30.Ölçü:
-Fa, 4
+Mi, 1/4
+Fa, 1/2
+Mi, 1/4
+
+31.Ölçü:
+Mi, 1/4
+Fa, 1/2
+Sol, 1/4
+
+32.Ölçü:
+La, 1/2
+Sol, 1/2
+
+33.Ölçü:
+Fa, 1
