@@ -1,15 +1,23 @@
-function [ff]= frek(nota,oktav)
-notalar=['C','c','D','E','e','F','f','G','g','A','b','B'];%notalarý bir matrise atýyoruz tüm notalarý ayný boyutta olacak þekilde.
-%c=Do# e=Mi Bemol(Bb) f=Fa# g=Sol# b=Si Bemol
-p=length(notalar);%matristeki notalarýn sayýsý
-referans=16.35;%referans olarak belirlenen frekans
-    for okt=0:8 %her oktavda notalarý hesaplamak için for döngüsü kulandým.
-        if okt==oktav %eðer döngüden gelen oktav deðeri istenen oktav deðerine eþitse
-            for j=1:p%dizideki notalarýn indexlerini döndüren for döngüsü
-                if nota==char(notalar(j))%argüman olarak girilen nota adý dizinin j.elemanýyla ayný ise
-                ff=2^okt*(2^((j-1)/12)*referans); %frenkans hesaplanýr
-                end  
-            end
-        end
-    end
+function ff=frek(nota,oktav)  %oluþturduðum fonksiyon nota ve oktava göre argüman alacaklar.
+notalar={'Do','Dod', 'Re', 'Mib' ,'Mi' ,'Fa', 'Fad', 'Sol', 'Sold', 'La', 'Sib', 'Si','Sus'}; %nota için tanýmladýðým karakterleri notalar dizisine atadým.
+referans=16.35;  %do notasýnýn 0.oktavdaki deðerini referans olarak aldým.
+p=length(notalar); %k deðiþkenine notalar dizisinin uzunluðunu atadým.
+susf=0;
+if nargin<2
+     oktav=4;
+end
+for i=0:8 %oktav için bir for oluþturdum ve her seferinde bir arttýrdým.
+    if i==oktav %i'nin deðeri benim giriþ yaptýðým oktav'ýn deðerine eþitse(i==oktav) ise if'in içine gir.
+       for j=1:p %notalar dizindeki elemanlar için for döngüsü oluþturdum.j'yi 1'den baþlatma sebebim ise matlabta dizilerde(matrislerde) 0. eleman yoktur ,1.elemandan baþlar.
+           if  size(nota)==size(notalar{j})
+              if nota==notalar{j}%giriþ yaptýðým nota ,notalar dizisindeki j. elemana eþitse if'in içine gir.
+                  ff=2^i*(2^((j-1)/12)*referans);%2^i olmasýnýn sebebi oktavý her deðiþtiðinde 2 katýna çýkýyor.(j-1) olma sebebide j'nin 1 den baþlamasýdýr.     
+                  if nota==notalar{13}
+                      ff=susf
+                  end
+              end 
+           end
+       end
+     end
+end
 end
