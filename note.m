@@ -1,15 +1,9 @@
-function [x,t]=note(f,vurus); 
-fs=8192;
-t=0:1/(0.01*(fs*vurus)):vurus-(1/fs); 
-
-x1=sin(2*pi*f*t*2/8);
-x2=sin(2*pi*f*t*1/8);
-x3=sin(2*pi*f*t*4/8);
-x4=sin(2*pi*f*t*1/8);
-x5=sin(-2*pi*f*t*2/8);
-x6=sin(-2*pi*f*t*1/8);
-x7=sin(-2*pi*f*t*4/8);
-x8=sin(-2*pi*f*t*1/8);
-x=x1+x2+x3+x4+x5+x6+x7+x8; 
-
+function [xx,tt]=note(frekans,vurus) 
+Fs=8192;
+tt=0:1/Fs:((0.25-(1/Fs))/2); 
+zz=0;
+   xx=sin(2*pi*frekans*tt); 
+if length(xx)==length(zz)    
+       zz=[linspace(0,1.5,Fs*vurus*(2/8)),linspace(1.5,1,Fs*vurus*(1/8)),linspace(1,1,Fs*vurus*(4/8)),linspace(1,0,Fs*vurus*(1/8))];
+end
 end
