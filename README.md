@@ -1,6 +1,9 @@
 Ayşegül KUT
+
 030113017
+
 Sinyal İşleme
+
 Proje: MATLAB ile Sentezleme
 
 frek.m -> Notaların frekans karşılıklarını döndüren fonksiyonu içerir.
