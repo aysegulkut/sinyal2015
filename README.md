@@ -1,22 +1,26 @@
-Ayşegül KUT
+AyÅŸegÃ¼l KUT
+
 030113017
-Sinyal İşleme
+
+Sinyal Ä°ÅŸleme
+
+
 Proje: MATLAB ile Sentezleme
 
-frek.m -> Notaların frekans karşılıklarını döndüren fonksiyonu içerir.
-Dosya tipi function dır.
+frek.m -> NotalarÄ±n frekans karÅŸÄ±lÄ±klarÄ±nÄ± dÃ¶ndÃ¼ren fonksiyonu iÃ§erir.
+Dosya tipi function dÄ±r.
 
-frekcagirma.m -> Frek fonksiyonunu kullanarak argüman olarak girilen nota ve oktav değerine göre frekansını gösterir.
+frekcagirma.m -> Frek fonksiyonunu kullanarak argÃ¼man olarak girilen nota ve oktav deÄŸerine gÃ¶re frekansÄ±nÄ± gÃ¶sterir.
 Dosya tipi script tir.
 
-note.m -> Aldığı argümanlara göre çıkışında paketli bir sinüs sinyali oluşturan fonksiyonu içerir.
-Dosya tipi function dır.
+note.m -> AldÄ±ÄŸÄ± argÃ¼manlara gÃ¶re Ã§Ä±kÄ±ÅŸÄ±nda paketli bir sinÃ¼s sinyali oluÅŸturan fonksiyonu iÃ§erir.
+Dosya tipi function dÄ±r.
 
-notecagirma.m -> Note fonksiyonu kullanılarak argüman olarak girilen nota adı ve oktav değerinin frekansını gösterir.
+notecagirma.m -> Note fonksiyonu kullanÄ±larak argÃ¼man olarak girilen nota adÄ± ve oktav deÄŸerinin frekansÄ±nÄ± gÃ¶sterir.
 Dosya tipi script tir.
 
-Notalar ve frekansları arasındaki bağlantı formülü -> f=2^okt*(2^((j-1)/12)*referans)
+Notalar ve frekanslarÄ± arasÄ±ndaki baÄŸlantÄ± formÃ¼lÃ¼ -> f=2^okt*(2^((j-1)/12)*referans)
 f=bulunan frekans
-okt=frekansı öğrenilmek istenen notanın oktav değeri
-j=notaların index değerleri
-referans=referans alınan frekans
+okt=frekansÄ± Ã¶ÄŸrenilmek istenen notanÄ±n oktav deÄŸeri
+j=notalarÄ±n index deÄŸerleri
+referans=referans alÄ±nan frekans
