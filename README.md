@@ -3,11 +3,16 @@ Ayşegül KUT
 Sinyal İşleme
 Proje: MATLAB ile Sentezleme
 
-frek.m -> Notaların frekans karşılıklarını döndüren fonksiyonu içerir.
-Dosya tipi function dır.
+notalar.png -> notaların görsel olarak bulunduğu, dosya tipi png olan dosyadır.
 
-note.m -> Aldığı argümanlara göre çıkışında paketli bir sinüs sinyali oluşturan fonksiyonu içerir.
-Dosya tipi function dır.
+notalar.txt -> notaların yazılı olduğu, dosya tipi txt olan bir dosyadır.
+
+frek.m -> Txt'den okunan notaların frekans karşılıklarını döndüren fonksiyonu içeren, dosya tipi function olan bir dosyadır.
+
+note.m -> Aldığı argümanlara göre çıkışında paketli bir sinüs sinyali oluşturan fonksiyonu içeren, dosya tipi function olan bir dosyadır.
+
+sentez.m -> notalar.txt den notaları çekip, ayrı ayrı sinüs sinyali oluşturarak bu sinyallerin grafiğini 
+ve sesli bir şekilde çalınmasını sağlayan kodları içeren, dosya tipi matlab olan bir dosyadır.
 
 Notalar ve frekansları arasındaki bağlantı formülü -> f=2^okt*(2^((j-1)/12)*referans)
 f=bulunan frekans
