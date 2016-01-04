@@ -1,4 +1,4 @@
-function [topla,t]=note(f,olcu) 
+function [x,t]=note(f,olcu) 
 fs=8192; %örnekleme frekansý
 a=1;
 topla=0;
@@ -15,6 +15,5 @@ end
    z3=linspace(1,1,length(t)/2);
    z4=linspace(1,0,length(t)/8);
    zarf=[z1 z2 z3 z4];
-   x=x.*zarf;
- echo=((x-(fs/10))*30/100)+x; %echo yu hesaplýyorum
+   x=topla.*zarf; %harmonikli halini zarfladým
 end
