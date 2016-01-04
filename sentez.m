@@ -1,25 +1,37 @@
-fs=8192; %Ã¶rnekleme frekansÄ±nÄ± tanÄ±mladÄ±m
-duraklama=fs*(1/100); %duraklama tanÄ±mladÄ±m
-oktav_degeri=0; %oktav degerinde degisiklik olmama durumu.
-oktavdegis=0; %oktav'a eklenmek istenen deger oktdegis degiskeniyle eklenecek[-1,+1].
-notalar={}; %notalar dizisi oluÅŸturdum
-dosya=fopen('notalar.txt'); %notalar.txt dosyasÄ±nÄ± okumak aÃ§ar.
-[nota,oktav,olcu]=textread('notalar.txt','%s%d%s','delimiter',','); %notalar.txt deki deÄŸerleri okur
-fclose(dosya);%dosyayÄ± kapatÄ±r.
-
-if oktav_degeri~=oktavdegis %oktdegis degiskeninde degisiklik yapÄ±lmasÄ± durumunda islenecek sart. 
-    for j=1:length(oktav) %text'ten cekilen oktav degerleri dongu icerisinde degistirilecek.
-        oktav(j)=oktav(j)+oktavdegis; %oktavÄ± arttÄ±rÄ±r
+%%Değişkenleri tanımlama
+Fs=3192;
+gecikme=round(Fs/10);
+duraklama=Fs/100;
+notalar=[];
+duraklama=[];
+%%oktav değerinin değişimi (-1 ise 1 oktav azalt, 1 ise 1 oktav arttır.
+oktdegis=3;
+%%notaları dosyadan okuma
+dosya=fopen('notalar.txt','r');
+[nota,oktav,olcu]=textread('notalar.txt','%s%d%s','delimiter',',');
+fclose(dosya);
+f=zeros(1,length(nota));
+%%farklı oktavlarda çalabilmek için
+if oktdegis~=0
+    for okt=1:length(oktav)
+        oktav(okt)=oktav(okt)+oktdegis; 
     end
 end
-
+%%notalar matrisi oluşumu
 for i=1:length(nota)
-f=frek(nota{i},oktav(i)); %notalar.txt deki notalarÄ±n frekanslarÄ±nÄ± hesaplar
-[topla,t]=note(f,olcu{i}); %frekans ve olcuye gÃ¶re sinyal oluÅŸturur.
-t=0:1/fs:olcu{i}-(1/fs); %t aralÄ±ÄŸÄ± tanÄ±mladÄ±m.
-notalar{i}=f; %notalar dizisinin ilk elemanÄ±na frekans
-notalar{i+1}=duraklama; %ikinci elemanÄ±na duraklama sÃ¼resini atadÄ±m.
-plot(t,f,t,duraklama) %frekans ve duraklama sÃ¼resini Ã§izdirdim.
-plot(t,f,t,echo,t,duraklama) %frekans, echo ve duraklama sÃ¼resini Ã§izdirdim.
-sound(echo)%ses Ã§almak iÃ§in
+    f(i)=frek(nota{i},oktav(i)); %frek fonsiyonu cagırılarak frekans degerleri hesaplandı. 
+    [sindalga,t]=note(f(i),str2num(olcu{i})); %note fonksiyonu cagırılarakta sin sinyalleri cizildi.
+    notalar=[notalar sindalga duraklama]; 
+end  
+%%echo oluşumu
+for j=1:length(notalar)
+    if (j+gecikme)<length(notalar)
+        notalar(j+gecikme)=notalar(j+gecikme)+0.3*notalar(j); 
+    end
 end
+%%normalize etme
+notalar = notalar /max(abs(notalar));
+%%grafiksel görünüm
+plot(notalar)
+%%frekansları sesli olarak duymak için
+sound(notalar,Fs)
