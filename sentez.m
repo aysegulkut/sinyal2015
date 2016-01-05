@@ -1,7 +1,7 @@
 %%Deðiþkenleri tanýmlama
 Fs=3192;
 gecikme=round(Fs/10);
-duraklama=Fs/100;
+duraklama=zeros(1,round(Fs/100));
 notalar=[];
 duraklama=[];
 %%oktav deðerinin deðiþimi (-1 ise 1 oktav azalt, 1 ise 1 oktav arttýr.
